@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\GITLAB02\\LGH-LAB03\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\views\\lghproduct\\lghgetlistproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\views\\lghproduct\\lghgetlistproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\views\\lghproduct\\lghgetlistproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\views\\lghproduct\\lghgetlistproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\controllers\\lghproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\controllers\\lghproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\views\\lghproduct\\lghgetallproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\views\\lghproduct\\lghgetallproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\views\\lghproduct\\lghgetallproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\views\\lghproduct\\lghgetallproduct.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\controllers\\lghproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\controllers\\lghproductcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\models\\lghproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{237449AD-15F4-4007-8915-231B9DB16F7F}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\models\\lghproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|d:\\gitlab02\\lgh-lab03\\lgh-lab03\\models\\lghproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C17B060A-598B-299D-9901-3C527A92100E}|LGH-LAB03\\LGH-LAB03.csproj|solutionrelative:lgh-lab03\\models\\lghproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,8 +42,7 @@
               "RelativeToolTip": "LGH-LAB03\\Views\\LghProduct\\LghGetListProduct.cshtml",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAACsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-28T01:38:57.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T01:38:57.626Z"
             },
             {
               "$type": "Document",
@@ -53,14 +52,14 @@
               "RelativeDocumentMoniker": "LGH-LAB03\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\GITLAB02\\LGH-LAB03\\LGH-LAB03\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "LGH-LAB03\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAACbAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAACbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-08-28T01:29:59.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "LghGetAllProduct.cshtml",
               "DocumentMoniker": "D:\\GITLAB02\\LGH-LAB03\\LGH-LAB03\\Views\\LghProduct\\LghGetAllProduct.cshtml",
               "RelativeDocumentMoniker": "LGH-LAB03\\Views\\LghProduct\\LghGetAllProduct.cshtml",
@@ -68,12 +67,11 @@
               "RelativeToolTip": "LGH-LAB03\\Views\\LghProduct\\LghGetAllProduct.cshtml",
               "ViewState": "AgIAABIAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-08-28T00:57:21.958Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:57:21.958Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "LghProductController.cs",
               "DocumentMoniker": "D:\\GITLAB02\\LGH-LAB03\\LGH-LAB03\\Controllers\\LghProductController.cs",
               "RelativeDocumentMoniker": "LGH-LAB03\\Controllers\\LghProductController.cs",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "LGH-LAB03\\Controllers\\LghProductController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T00:48:20.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:48:20.762Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "LGH-LAB03\\Models\\LghProduct.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-28T00:45:33.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-28T00:45:33.078Z"
             }
           ]
         }

@@ -1,0 +1,22 @@
+﻿@model List<LghLesson04Lab.Models.LghAccount>
+
+@{
+    ViewData["Title"] = "Danh sách tài khoản";
+}
+
+<div class="row g-4">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-lg-4 d-flex">
+            <div class="card account-card w-100">
+                <img class="card-img-top account-avatar" src="@item.Avatar" alt="Ảnh đại diện của @item.Name" loading="lazy" />
+                <div class="card-body d-flex flex-column">
+                    <h3 class="card-title h5">@item.Name</h3>
+                    <p class="card-text text-muted flex-grow-1">@item.Bip</p>
+                    <a asp-route="LghProfile" asp-route-id="@item.Id" class="btn btn-primary align-self-start">Profile</a>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>

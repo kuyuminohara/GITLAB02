@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Profile";
+
+    var profile = ViewBag.LghAccount as LghAccount;
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <div>
+            <img src="@profile.Avatar" alt="@profile.Name" />
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <div class="card">
+            <h3>Name: @profile.Name</h3>
+            <p>Email: @profile.Email</p>
+            <p>Phone: @profile.Phone</p>
+            <p>Address: @profile.Address</p>
+            <p>Bio: @profile.Bip</p>
+            <p>Gender: @profile.Gender
+                @if (profile.Gender == 1)
+                {
+                    <span>Nam</span>
+                }
+                else
+                {
+                    <span>Nu</span>
+                }
+            </p>
+            <p>Birthday: @profile.BirthDate </p>
+            <p><a asp-controller="LghAccount" asp-action="LghIndex" class="btn btn-primary">Back to List</a></p>
+        </div>
+    </div>
+</div>
