@@ -1,0 +1,52 @@
+@model LghLesson07.Models.DataModels.LghMember
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="card p-3">
+<h1>Them moi thanh vien</h1>
+
+<h4>LghMember</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post" asp-controller="LghMember">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="LghMemberId" class="control-label"></label>
+                <input asp-for="LghMemberId" class="form-control" />
+                <span asp-validation-for="LghMemberId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LghUserId" class="control-label"></label>
+                <input asp-for="LghUserId" class="form-control" />
+                <span asp-validation-for="LghUserId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LghPassword" class="control-label"></label>
+                <input asp-for="LghPassword" class="form-control" />
+                <span asp-validation-for="LghPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LghFullName" class="control-label"></label>
+                <input asp-for="LghFullName" class="form-control" />
+                <span asp-validation-for="LghFullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LghEmail" class="control-label"></label>
+                <input asp-for="LghEmail" class="form-control" />
+                <span asp-validation-for="LghEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <input type="submit" value="Ghi lai" class="btn btn-primary" />
+                    <a asp-action="Index" class="btn btn-secondary">quay lai</a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>

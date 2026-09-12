@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewData["Title"] = "Get Member";
+    int num = 0;
+}
+
+<div class="card">
+    <h1>@ViewData["Title"]</h1>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>#No.</th>
+                <th>Member ID</th>
+                <th>User ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var member in ViewBag.Members)
+            {
+                num++;
+
+                <tr>
+                    <td>@num</td>
+                    <td>@member.LghMemberId</td>
+                    <td>@member.LghUserId</td>
+                    <td>@member.LghFullName</td>
+                    <td>@member.LghEmail</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

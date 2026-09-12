@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Get Member";
+    var member = ViewBag.Member as LghLesson07.Models.DataModels.LghMember;
+}
+<div class="alert alert-info">
+    <h1>@ViewData["Title"]</h1>
+    @*<p>Member id:@ViewBag.Member.LghMemberId</p>
+    <p>User id:@ViewBag.Member.LghUserId</p>
+    <p>Password:@ViewBag.Member.LghPassword</p>
+    <p>Full name:@ViewBag.Member.LghFullName</p>
+    <p>Email:@ViewBag.Member.LghEmail</p>*@
+    <p>Member id:@member.LghMemberId</p>
+    <p>User id:@member.LghUserId</p>
+    <p>Password:@member.LghPassword</p>
+    <p>Full name:@member.LghFullName</p>
+    <p>Email:@member.LghEmail</p>
+</div>
