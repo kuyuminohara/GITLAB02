@@ -1,0 +1,109 @@
+@model LghLesson08.Models.LghMember
+
+@{
+    ViewData["Title"] = "Sửa thông tin thành viên";
+}
+
+<div class="container mt-4">
+
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-warning">
+            <h3 class="mb-0">
+                <i class="bi bi-pencil-square"></i>
+                @ViewData["Title"]
+            </h3>
+        </div>
+        <div class="card-body">
+
+            <form asp-action="LghEdit" method="post">
+
+                <input type="hidden" asp-for="LghMemberId" />
+                <div asp-validation-summary="ModelOnly"
+                     class="alert alert-danger">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="LghUserName"
+                               class="form-label fw-semibold">
+                        </label>
+
+                        <input asp-for="LghUserName"
+                               class="form-control"
+                               placeholder="Nhập tên tài khoản" />
+
+                        <span asp-validation-for="LghUserName"
+                              class="text-danger">
+                        </span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="LghPassword"
+                               class="form-label fw-semibold">
+                        </label>
+
+                        <input asp-for="LghPassword"
+                               type="password"
+                               class="form-control"
+                               placeholder="Nhập mật khẩu" />
+
+                        <span asp-validation-for="LghPassword"
+                              class="text-danger">
+                        </span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="LghFullName"
+                               class="form-label fw-semibold">
+                        </label>
+
+                        <input asp-for="LghFullName"
+                               class="form-control"
+                               placeholder="Nhập họ và tên" />
+
+                        <span asp-validation-for="LghFullName"
+                              class="text-danger">
+                        </span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label asp-for="LghEmail"
+                               class="form-label fw-semibold">
+                        </label>
+
+                        <input asp-for="LghEmail"
+                               type="email"
+                               class="form-control"
+                               placeholder="example@gmail.com" />
+
+                        <span asp-validation-for="LghEmail"
+                              class="text-danger">
+                        </span>
+                    </div>
+
+                </div>
+                <div class="border-top pt-3 mt-2">
+
+                    <button type="submit"
+                            class="btn btn-warning me-2">
+                        <i class="bi bi-save"></i>
+                        Cập nhật
+                    </button>
+
+                    <a asp-action="Index"
+                       class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i>
+                        Quay lại
+                    </a>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

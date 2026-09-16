@@ -1,0 +1,88 @@
+@model IEnumerable<LghLesson08.Models.LghMember>
+
+@{
+    ViewData["Title"] = "Danh sách thành viên";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm border-0">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h3 class="mb-0">
+                <i class="bi bi-people-fill"></i>
+                @ViewData["Title"]
+            </h3>
+
+            <a asp-action="LghCreate" class="btn btn-light btn-sm">
+                <i class="bi bi-plus-circle"></i> Thêm mới
+            </a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Mã thành viên</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>Họ và tên</th>
+                            <th>Email</th>
+                            <th style="width: 230px;">Thao tác</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="fw-semibold">
+                                    @Html.DisplayFor(modelItem => item.LghMemberId)
+                                </td>
+                                <td class="fw-semibold">
+                                    @Html.DisplayFor(modelItem => item.LghUserName)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LghPassword)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LghFullName)
+                                </td>
+
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.LghEmail)
+                                </td>
+
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <a asp-action="LghDetails"
+                                           asp-route-id="@item.LghMemberId"
+                                           class="btn btn-info btn-sm text-white">
+                                            <i class="bi bi-eye"></i> Chi tiết
+                                        </a>
+                                        <a asp-action="LghEdit"
+                                           asp-route-id="@item.LghMemberId"
+                                           class="btn btn-warning btn-sm">
+                                            <i class="bi bi-pencil-square"></i> Sửa
+                                        </a>
+                                        <a asp-action="LghDelete"
+                                           asp-route-id="@item.LghMemberId"
+                                           class="btn btn-danger btn-sm">
+                                            <i class="bi bi-trash"></i> Xóa
+                                        </a>
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="card-footer text-muted">
+            Tổng số thành viên:
+            <strong>@Model.Count()</strong>
+        </div>
+
+    </div>
+</div>
