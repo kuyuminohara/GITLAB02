@@ -1,0 +1,59 @@
+@model LghLesson09.Models.DataModels.DataViewModel.LghMemberRegister
+
+@{
+    ViewData["Title"] = "Thêm thành viên";
+}
+
+<h1>Thêm thành viên</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="mb-3">
+                <label asp-for="LghMemberName" class="form-label"></label>
+                <input asp-for="LghMemberName" class="form-control" />
+                <span asp-validation-for="LghMemberName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LghPassword" class="form-label"></label>
+                <input asp-for="LghPassword" class="form-control" />
+                <span asp-validation-for="LghPassword" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LghEmail" class="form-label"></label>
+                <input asp-for="LghEmail" class="form-control" />
+                <span asp-validation-for="LghEmail" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LghPhoneNumber" class="form-label"></label>
+                <input asp-for="LghPhoneNumber" class="form-control" />
+                <span asp-validation-for="LghPhoneNumber" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="FullName" class="form-label"></label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="birthDate" class="form-label"></label>
+                <input asp-for="birthDate" class="form-control" />
+                <span asp-validation-for="birthDate" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Lưu</button>
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

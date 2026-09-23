@@ -1,0 +1,41 @@
+@model IEnumerable<LghLesson09.Models.DataModels.LghMembers>
+
+@{
+    ViewData["Title"] = "Danh sách thành viên";
+}
+
+<h1>Danh sách thành viên</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Thêm thành viên</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.LghMemberId)</th>
+            <th>@Html.DisplayNameFor(model => model.LghMemberName)</th>
+            <th>@Html.DisplayNameFor(model => model.LghEmail)</th>
+            <th>@Html.DisplayNameFor(model => model.LghPhoneNumber)</th>
+            <th>@Html.DisplayNameFor(model => model.LghFullName)</th>
+            <th>@Html.DisplayNameFor(model => model.LghbirthDate)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model)
+{
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.LghMemberId)</td>
+            <td>@Html.DisplayFor(modelItem => item.LghMemberName)</td>
+            <td>@Html.DisplayFor(modelItem => item.LghEmail)</td>
+            <td>@Html.DisplayFor(modelItem => item.LghPhoneNumber)</td>
+            <td>@Html.DisplayFor(modelItem => item.LghFullName)</td>
+            <td>@Html.DisplayFor(modelItem => item.LghbirthDate)</td>
+            <td>
+                <a asp-action="Create" class="btn btn-sm btn-secondary">Thêm</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
