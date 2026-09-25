@@ -1,0 +1,60 @@
+@model LghLesson10EFCDBFirst.Models.LghMember
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>LghMember</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="LghUserName" class="control-label"></label>
+                <input asp-for="LghUserName" class="form-control" />
+                <span asp-validation-for="LghUserName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LghPassword" class="control-label"></label>
+                <input asp-for="LghPassword" class="form-control" />
+                <span asp-validation-for="LghPassword" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LghFullName" class="control-label"></label>
+                <input asp-for="LghFullName" class="form-control" />
+                <span asp-validation-for="LghFullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LghEmail" class="control-label"></label>
+                <input asp-for="LghEmail" class="form-control" />
+                <span asp-validation-for="LghEmail" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LghPhone" class="control-label"></label>
+                <input asp-for="LghPhone" class="form-control" />
+                <span asp-validation-for="LghPhone" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="LghStatus" class="control-label"></label>
+                <input asp-for="LghStatus" class="form-check-input" />
+                <span asp-validation-for="LghStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
