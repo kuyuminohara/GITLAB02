@@ -1,0 +1,68 @@
+@model LeGiaHung2410900041_exam.Models.LghStudent
+
+@{
+    ViewData["Title"] = "Thêm sinh viên";
+}
+
+<h1 class="display-6 mb-4">Thêm sinh viên</h1>
+
+<h4>LghStudent</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="mb-3">
+                <label asp-for="LghName" class="control-label"></label>
+                <input asp-for="LghName" class="form-control" />
+                <span asp-validation-for="LghName" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LghGender" class="form-label">Giới tính</label>
+                <select asp-for="LghGender" class="form-select">
+                    <option value="">-- Chọn giới tính --</option>
+                    <option value="true">Nam</option>
+                    <option value="false">Nữ</option>
+                </select>
+                <span asp-validation-for="LghGender" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LghBirthDay" class="control-label"></label>
+                <input asp-for="LghBirthDay" type="date" class="form-control" />
+                <span asp-validation-for="LghBirthDay" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LghEmail" class="control-label"></label>
+                <input asp-for="LghEmail" class="form-control" />
+                <span asp-validation-for="LghEmail" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LghPhone" class="control-label"></label>
+                <input asp-for="LghPhone" class="form-control" />
+                <span asp-validation-for="LghPhone" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="LghActive" class="form-label">Trạng thái</label>
+                <select asp-for="LghActive" class="form-select">
+                    <option value="">-- Chọn trạng thái --</option>
+                    <option value="true">Đang hoạt động</option>
+                    <option value="false">Ngừng hoạt động</option>
+                </select>
+                <span asp-validation-for="LghActive" class="text-danger"></span>
+            </div>
+            <div class="mt-4">
+                <input type="submit" value="Lưu thông tin" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index" class="btn btn-outline-secondary mt-3">Quay lại danh sách</a>
+</div>

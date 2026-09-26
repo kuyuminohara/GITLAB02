@@ -1,0 +1,71 @@
+@model LeGiaHung2410900041_exam.Models.LghStudent
+
+@{
+    ViewData["Title"] = "Chi tiết sinh viên";
+}
+
+<div class="details-header mb-4">
+    <div>
+        <h1 class="display-6 mb-1">Chi tiết sinh viên</h1>
+        <p class="text-muted mb-0">Thông tin chi tiết của sinh viên</p>
+    </div>
+</div>
+
+<div class="card student-details-card shadow-sm border-0">
+    <div class="card-header bg-primary text-white py-3">
+        <h2 class="h5 mb-0">@Model.LghName</h2>
+    </div>
+    <div class="card-body p-4">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="detail-item">
+                    <span class="detail-label">Họ và tên</span>
+                    <span class="detail-value">@Model.LghName</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-item">
+                    <span class="detail-label">Giới tính</span>
+                    <span class="detail-value">@(Model.LghGender == true ? "Nam" : Model.LghGender == false ? "Nữ" : "Chưa cập nhật")</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-item">
+                    <span class="detail-label">Ngày sinh</span>
+                    <span class="detail-value">@(Model.LghBirthDay?.ToString("dd/MM/yyyy") ?? "Chưa cập nhật")</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-item">
+                    <span class="detail-label">Email</span>
+                    <span class="detail-value">@(Model.LghEmail ?? "Chưa cập nhật")</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-item">
+                    <span class="detail-label">Số điện thoại</span>
+                    <span class="detail-value">@(Model.LghPhone ?? "Chưa cập nhật")</span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="detail-item">
+                    <span class="detail-label">Trạng thái</span>
+                    <span class="detail-value">
+                        @if (Model.LghActive == true)
+                        {
+                            <span class="badge rounded-pill text-bg-success">Đang hoạt động</span>
+                        }
+                        else
+                        {
+                            <span class="badge rounded-pill text-bg-secondary">Ngừng hoạt động</span>
+                        }
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer bg-white border-0 p-4 pt-0">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Sửa thông tin</a>
+        <a asp-action="Index" class="btn btn-outline-secondary">Quay lại danh sách</a>
+    </div>
+</div>

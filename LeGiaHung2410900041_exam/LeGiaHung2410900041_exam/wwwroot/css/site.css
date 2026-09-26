@@ -1,0 +1,75 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #f8f9fa;
+}
+
+.table thead th {
+  white-space: nowrap;
+}
+
+.form-check-input:checked {
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.badge {
+  font-weight: 500;
+}
+
+.student-details-card {
+  max-width: 900px;
+}
+
+.detail-item {
+  height: 100%;
+  padding: 1rem 1.1rem;
+  border: 1px solid #e2e6ea;
+  border-radius: .5rem;
+  background-color: #fff;
+}
+
+.detail-label,
+.detail-value {
+  display: block;
+}
+
+.detail-label {
+  margin-bottom: .35rem;
+  color: #6c757d;
+  font-size: .85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.detail-value {
+  color: #212529;
+  font-size: 1.05rem;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
