@@ -1,0 +1,48 @@
+@model LghNetCoreLesson12_EF.Models.LghCategory
+
+@{
+    ViewData["Title"] = "Create category";
+}
+
+<div class="mb-4">
+    <a asp-action="Index" class="text-decoration-none text-muted">&larr; Back to categories</a>
+    <h1 class="display-6 fw-bold mt-3 mb-1">Create category</h1>
+    <p class="text-muted mb-0">Add a new category to your product catalog.</p>
+</div>
+
+<div class="row">
+    <div class="col-lg-7 col-xl-6">
+        <div class="card border-0 shadow-sm rounded-4">
+            <div class="card-body p-4 p-md-5">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="alert alert-danger" role="alert"></div>
+
+                    <div class="mb-4">
+                        <label asp-for="LghName" class="form-label fw-semibold">Category name</label>
+                        <input asp-for="LghName" class="form-control form-control-lg"
+                            placeholder="e.g. Electronics" />
+                        <span asp-validation-for="LghName" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="LghStatus" class="form-label fw-semibold">Status</label>
+                        <select asp-for="LghStatus" class="form-select form-select-lg">
+                            <option value="1">Active</option>
+                            <option value="0">Inactive</option>
+                        </select>
+                        <span asp-validation-for="LghStatus" class="text-danger small"></span>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-primary px-4">Create category</button>
+                        <a asp-action="Index" class="btn btn-light px-4">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,88 @@
+@model LghNetCoreLesson12_EF.Models.LghProduct
+
+@{
+    ViewData["Title"] = "Create product";
+}
+
+<div class="mb-4">
+    <a asp-action="Index" class="text-decoration-none text-muted">&larr; Back to products</a>
+    <h1 class="display-6 fw-bold mt-3 mb-1">Create product</h1>
+    <p class="text-muted mb-0">Add a new product to your catalog.</p>
+</div>
+
+<div class="card border-0 shadow-sm rounded-4">
+    <div class="card-body p-4 p-md-5">
+        <form asp-action="Create" method="post" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="alert alert-danger" role="alert"></div>
+
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="mb-4">
+                        <label asp-for="LghName" class="form-label fw-semibold">Name</label>
+                        <input asp-for="LghName" class="form-control" placeholder="Enter product name" />
+                        <span asp-validation-for="LghName" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="lghImageFile" class="form-label fw-semibold">Image</label>
+                        <input type="file" id="lghImageFile" name="lghImageFile" class="form-control" accept=".jpg,.jpeg,.png,.gif,.webp" />
+                        <div class="form-text">Accepted formats: JPG, JPEG, PNG, GIF, WEBP.</div>
+                        <span class="text-danger small">@Html.ValidationMessage("lghImageFile")</span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="LghDescription" class="form-label fw-semibold">Description</label>
+                        <textarea asp-for="LghDescription" class="form-control" rows="5" placeholder="Enter product description"></textarea>
+                        <span asp-validation-for="LghDescription" class="text-danger small"></span>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="mb-4">
+                        <label asp-for="LghCategoryId" class="form-label fw-semibold">Category</label>
+                        <select asp-for="LghCategoryId" class="form-select" asp-items="ViewBag.LghCategoryId">
+                            <option value="">Select a category</option>
+                        </select>
+                        <span asp-validation-for="LghCategoryId" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="LghPrice" class="form-label fw-semibold">Price</label>
+                        <div class="input-group">
+                            <input asp-for="LghPrice" class="form-control" type="number" min="0" step="0.01" placeholder="0" />
+                            <span class="input-group-text">VND</span>
+                        </div>
+                        <span asp-validation-for="LghPrice" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="LghSalePrice" class="form-label fw-semibold">Sale price</label>
+                        <div class="input-group">
+                            <input asp-for="LghSalePrice" class="form-control" type="number" min="0" step="0.01" placeholder="0" />
+                            <span class="input-group-text">VND</span>
+                        </div>
+                        <span asp-validation-for="LghSalePrice" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="LghStatus" class="form-label fw-semibold">Status</label>
+                        <select asp-for="LghStatus" class="form-select">
+                            <option value="1">Active</option>
+                            <option value="0">Inactive</option>
+                        </select>
+                        <span asp-validation-for="LghStatus" class="text-danger small"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex gap-2 pt-3 border-top">
+                <button type="submit" class="btn btn-primary px-4">Save product</button>
+                <a asp-action="Index" class="btn btn-light px-4">Back to list</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
