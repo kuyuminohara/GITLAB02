@@ -1,0 +1,137 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    color: #243047;
+    background: #f5f7fb;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+.Lgh-navbar {
+    background: linear-gradient(135deg, #172554, #2563eb);
+    box-shadow: 0 4px 18px rgba(23, 37, 84, .18);
+}
+
+.Lgh-navbar-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 76px;
+    gap: 24px;
+}
+
+.Lgh-brand,
+.Lgh-nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.Lgh-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.35rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.Lgh-brand-mark {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 12px;
+    color: #1d4ed8;
+    background: #fff;
+    font-size: 1.2rem;
+}
+
+.Lgh-nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.Lgh-nav-links a {
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: .95rem;
+    transition: background-color .2s, transform .2s;
+}
+
+.Lgh-nav-links a:hover,
+.Lgh-nav-links a:focus-visible {
+    background: rgba(255, 255, 255, .18);
+    transform: translateY(-1px);
+}
+
+.Lgh-content {
+    min-height: calc(100vh - 156px);
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.Lgh-content > * {
+    padding: 24px;
+    border: 0;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 24px rgba(30, 41, 59, .08);
+}
+
+.Lgh-footer {
+    padding: 22px 0;
+    color: #64748b;
+    background: #eaf0f8;
+    font-size: .9rem;
+}
+
+.Lgh-footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.Lgh-footer p {
+    margin: 0;
+}
+
+.Lgh-footer a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.Lgh-footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .Lgh-navbar-content,
+    .Lgh-footer .container {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .Lgh-navbar-content {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .Lgh-nav-links {
+        justify-content: flex-start;
+    }
+
+    .Lgh-nav-links a {
+        padding: 8px 10px;
+    }
+
+    .Lgh-content {
+        min-height: calc(100vh - 260px);
+        padding-top: 20px;
+    }
+}

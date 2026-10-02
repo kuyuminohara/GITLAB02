@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/LghLayoutcss.css" asp-append-version="true" />
+</head>
+<body>
+    <nav class="Lgh-navbar">
+        <div class="container Lgh-navbar-content">
+            <a class="Lgh-brand" href="/Products/Index" title="Danh sách sản phẩm">
+                <span class="Lgh-brand-mark">L</span>
+                <span>Lgh Store</span>
+            </a>
+            <div class="Lgh-nav-links">
+                <a asp-action="Index" asp-controller="Products">Sản phẩm</a>
+                <a asp-action="Search" asp-controller="Products">Tìm kiếm</a>
+                <a asp-action="Hots" asp-controller="Products">Sản phẩm hot</a>
+                <a href="/Products/About">Giới thiệu</a>
+            </div>
+        </div>
+    </nav>
+    <main class="container Lgh-content">
+        @RenderBody()
+    </main>
+    <footer class="Lgh-footer">
+        <div class="container">
+            <p>&copy; 2026 - Copyright by @@Hung</p>
+            <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy Policy</a>
+        </div>
+    </footer>
+</body>
+</html>
