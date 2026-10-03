@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>LghLesson14_Layout</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\LghAdmins\Data\" />
+    <Folder Include="Areas\LghAdmins\Models\" />
+  </ItemGroup>
+
+</Project>
